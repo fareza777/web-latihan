@@ -82,3 +82,36 @@
         border-bottom: 2px solid #4CAF50;
         padding-bottom: 4px;
         }
+
+        @media (max-width: 600px) {
+
+        .navbar {
+        padding: 10px 12px;
+         }
+
+        .navbar a {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 14px;
+        }
+
+        .container {
+        margin: 16px;
+        padding: 18px;
+        }
+
+        h1 {
+        font-size: 22px;
+        }
+
+        body {
+        font-size: 14px;
+        }
+
+        .btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        }
+        }
+
