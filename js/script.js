@@ -10,3 +10,14 @@ function toggleDetail(button) {
     button.textContent = "Lihat Detail";
   }
 }
+
+function validateForm() {
+  const message = document.querySelector('textarea[name="pesan"]').value.trim();
+
+  if (message.length < 10) {
+    alert('Pesan terlalu singkat. Mohon jelaskan lebih detail.');
+    return false;
+  }
+
+  return true;
+}
