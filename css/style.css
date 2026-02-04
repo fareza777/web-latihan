@@ -1,148 +1,156 @@
 
-/* GLOBAL */
-        body { 
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
+/* =========================
+   GLOBAL
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
 
-/* LAYOUT */
-        .container {
-            background-color: white;
-            max-width: 600px;
-            margin: 60px auto;
-            padding: 30px;
-            border-radius: 8px;
-        }
+a {
+  text-decoration: none;
+}
 
- /* TEXT */       
-        h1 {
-            margin-top: 0;
-            color: #333;
-        }
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background-color: #333;
+  padding: 12px 20px;
+}
 
-        p {
-            margin: 6px 0;
-        }
+.navbar a {
+  color: white;
+  margin-right: 15px;
+  font-weight: bold;
+}
 
-/* LINK & BUTTON */
-        a {
-            text-decoration: none;
-        }
+.navbar a:hover {
+  color: #4CAF50;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #25D366;
-            color: white;
-            border-radius: 4px;
-            margin-top: 6px;
-        }
+.navbar a.active {
+  color: #4CAF50;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 4px;
+}
 
-        .btn:hover {
-            opacity: 0.9;
-        }
+/* =========================
+   LAYOUT
+========================= */
+.container {
+  background-color: white;
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 8px;
+}
 
-/* HR/ DIVIDER */
-hr { 
-    border: none; 
-    border-top: 1px solid #ddd; 
-    margin: 20px 0; 
-   }
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1 {
+  margin-top: 0;
+  color: #333;
+}
 
 h2 {
-    margin-top: 30px;
-   }
+  margin-top: 30px;
+  color: #333;
+}
 
-/* RESPONSIVE */
-        @media (max-width: 600px) {
-        .container {
-        margin: 20px;
-        padding: 20px;
-        }
+h3 {
+  margin-top: 20px;
+  color: #444;
+}
 
-        h1 {
-        font-size: 22px;
-        }
+p {
+  margin: 6px 0;
+}
 
-        body {
-        font-size: 14px;
-        }
-        }
+/* =========================
+   BUTTON
+========================= */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 4px;
+  margin-top: 6px;
+  border: none;
+  cursor: pointer;
+}
 
-/* NAVBAR */
-        .navbar {
-         background-color: #333;
-        padding: 12px 20px;
-        }
+.btn:hover {
+  opacity: 0.9;
+}
 
-        .navbar a {
-        color: white;
-        text-decoration: none;
-        margin-right: 15px;
-        font-weight: bold;
-        }
-
-        .navbar a:hover {
-        text-decoration: underline;
-        }
-
-        .navbar a.active {
-        color: #4CAF50;
-        border-bottom: 2px solid #4CAF50;
-        padding-bottom: 4px;
-        }
-
-        @media (max-width: 600px) {
-
-        .navbar {
-        padding: 10px 12px;
-         }
-
-        .navbar a {
-        display: inline-block;
-        margin-right: 10px;
-        font-size: 14px;
-        }
-
-        .container {
-        margin: 16px;
-        padding: 18px;
-        }
-
-        h1 {
-        font-size: 22px;
-        }
-
-        body {
-        font-size: 14px;
-        }
-
-        .btn {
-        width: 100%;
-        text-align: center;
-        padding: 12px;
-        }
-        }
-
-/* KONTAK */
-input, textarea {
+/* =========================
+   FORM
+========================= */
+input,
+textarea {
   width: 100%;
   padding: 10px;
   margin-top: 6px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 textarea {
   min-height: 100px;
 }
 
-button.btn {
+/* =========================
+   DIVIDER
+========================= */
+hr {
   border: none;
-  cursor: pointer;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
 }
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+@media (max-width: 600px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    padding: 10px 12px;
+  }
+
+  .navbar a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .container {
+    margin: 16px;
+    padding: 18px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}
+
 
 
