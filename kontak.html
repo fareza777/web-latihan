@@ -17,10 +17,13 @@
 <div class="container">
   <h1>Kontak Saya</h1>
   <p>Silakan hubungi saya melalui form di bawah ini.</p>
-  <form action="https://formsubmit.co/fajar.mreza+form@gmail.com" method="POST" onsubmit="return validateForm()">
-  <p><input type="text" name="nama" placeholder="Nama" required></p>
+  <form action="https://formsubmit.co/fajar.mreza+form@gmail.com" method="POST">
+  <p><input type="text" name="nama" placeholder="Nama" required minlength="3"></p>
   <p><input type="email" name="email" placeholder="Email" required></p>
-  <p><textarea name="pesan" placeholder="Pesan" required></textarea></p>
+  <p><textarea name="pesan" placeholder="Pesan" required minlength="10"></textarea></p>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="Pesan dari Website">
+  <input type="hidden" name="_template" value="table">
   <p><button type="submit" class="btn">Kirim Pesan</button></p>
   </form>
 </div>
