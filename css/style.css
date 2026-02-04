@@ -44,6 +44,13 @@
             opacity: 0.9;
         }
 
+/* HR/ DIVIDER */
+hr { 
+    border: none; 
+    border-top: 1px solid #ddd; 
+    margin: 20px 0; 
+   }
+
 /* RESPONSIVE */
         @media (max-width: 600px) {
         .container {
@@ -133,3 +140,4 @@ button.btn {
   border: none;
   cursor: pointer;
 }
+
