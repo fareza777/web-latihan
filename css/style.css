@@ -115,3 +115,21 @@
         }
         }
 
+/* KONTAK */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+button.btn {
+  border: none;
+  cursor: pointer;
+}
